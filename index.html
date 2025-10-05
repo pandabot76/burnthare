@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burnt Hare | Professional Running Events</title>
+    
+    <link rel="stylesheet" href="./assets/css/style.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container nav">
+            <a href="/" class="logo">BURNT HARE</a>
+            
+            <div style="display: flex; align-items: center;">
+                <ul class="nav-links" style="list-style: none; display: flex;">
+                    <li><a href="/">Home</a></li>
+                    
+                    <li class="dropdown-menu-item">
+                        <a href="#races">Races ▼</a> 
+                        <ul class="dropdown-content" id="races-dropdown">
+                            </ul>
+                    </li>
+                    
+                    <li><a href="/results.html">Results</a></li>
+                    <li><a href="/support.html">Support</a></li>
+                </ul>
+                <button id="theme-toggle" class="mode-toggle">Toggle Mode</button>
+            </div>
+        </div>
+    </header>
+    
+    <section class="hero" id="hero-section">
+        <div class="hero-content" id="hero-banner">
+            <span class="next-race-banner">LOADING EVENT DATA...</span>
+            <h1>Loading...</h1>
+            <a href="#" class="btn" style="opacity: 0.5;">Loading...</a>
+        </div>
+    </section>
+
+    <section class="races-section">
+        <div class="container">
+            <h2 id="races">Our Upcoming Races</h2>
+            <div class="races-grid" id="races-grid">
+                <p style="text-align:center; grid-column: 1 / -1; padding: 40px 0;">Loading race schedule...</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Burnt Hare Events. All rights reserved. | <a href="privacy.html">Privacy Policy</a></p>
+        </div>
+    </footer>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

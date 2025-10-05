@@ -1,0 +1,154 @@
+[
+    {
+        "id": "hitchin-hard-2025",
+        "name": "Hitchin Hard Half & 10",
+        "distance": "13.1 Mi / 10 Mi",
+        "date": "2025-06-01",
+        "dateDisplay": "June 1, 2025",
+        "resultsUrl": "https://external.timing.site/hitchin-hard-2025-results"
+    },
+    {
+        "id": "hitchin-tri-2025",
+        "name": "Hitchin Triathlon",
+        "distance": "Triathlon",
+        "date": "2025-07-06",
+        "dateDisplay": "July 6, 2025",
+        "resultsUrl": "https://external.timing.site/hitchin-tri-2025-results"
+    },
+    {
+        "id": "hitchin-5k-2024",
+        "name": "Hitchin 5KM",
+        "distance": "5K",
+        "date": "2024-09-29",
+        "dateDisplay": "September 29, 2024",
+        "resultsUrl": "https://external.timing.site/hitchin-5k-2024-results"
+    },
+    {
+        "id": "hitchin-10k-2024",
+        "name": "Hitchin 10KM",
+        "distance": "10K",
+        "date": "2024-05-05",
+        "dateDisplay": "May 5, 2024",
+        "resultsUrl": "https://external.timing.site/hitchin-10k-2024-results"
+    },
+    {
+        "id": "hitchin-tri-2024",
+        "name": "Hitchin Triathlon",
+        "distance": "Triathlon",
+        "date": "2024-07-07",
+        "dateDisplay": "July 7, 2024",
+        "resultsUrl": "https://external.timing.site/hitchin-tri-2024-results"
+    },
+    {
+        "id": "hitchin-hard-2024",
+        "name": "Hitchin Hard Half & 10",
+        "distance": "13.1 Mi / 10 Mi",
+        "date": "2024-06-02",
+        "dateDisplay": "June 2, 2024",
+        "resultsUrl": "https://external.timing.site/hitchin-hard-2024-results"
+    },
+    {
+        "id": "hitchin-5k-2023",
+        "name": "Hitchin 5KM",
+        "distance": "5K",
+        "date": "2023-09-24",
+        "dateDisplay": "September 24, 2023",
+        "resultsUrl": "https://external.timing.site/hitchin-5k-2023-results"
+    },
+    {
+        "id": "hitchin-10k-2023",
+        "name": "Hitchin 10KM",
+        "distance": "10K",
+        "date": "2023-05-07",
+        "dateDisplay": "May 7, 2023",
+        "resultsUrl": "https://external.timing.site/hitchin-10k-2023-results"
+    },
+    {
+        "id": "hitchin-tri-2023",
+        "name": "Hitchin Triathlon",
+        "distance": "Triathlon",
+        "date": "2023-07-09",
+        "dateDisplay": "July 9, 2023",
+        "resultsUrl": "https://external.timing.site/hitchin-tri-2023-results"
+    },
+    {
+        "id": "hitchin-5k-2022",
+        "name": "Hitchin 5KM",
+        "distance": "5K",
+        "date": "2022-09-25",
+        "dateDisplay": "September 25, 2022",
+        "resultsUrl": "https://external.timing.site/hitchin-5k-2022-results"
+    },
+    {
+        "id": "hitchin-10k-2022",
+        "name": "Hitchin 10KM",
+        "distance": "10K",
+        "date": "2022-05-08",
+        "dateDisplay": "May 8, 2022",
+        "resultsUrl": "https://external.timing.site/hitchin-10k-2022-results"
+    },
+    {
+        "id": "hitchin-tri-2022",
+        "name": "Hitchin Triathlon",
+        "distance": "Triathlon",
+        "date": "2022-07-10",
+        "dateDisplay": "July 10, 2022",
+        "resultsUrl": "https://external.timing.site/hitchin-tri-2022-results"
+    },
+    {
+        "id": "hitchin-5k-2021",
+        "name": "Hitchin 5KM",
+        "distance": "5K",
+        "date": "2021-09-26",
+        "dateDisplay": "September 26, 2021",
+        "resultsUrl": "https://external.timing.site/hitchin-5k-2021-results"
+    },
+    {
+        "id": "hitchin-5k-2020",
+        "name": "Hitchin 5KM",
+        "distance": "5K",
+        "date": "2020-09-27",
+        "dateDisplay": "September 27, 2020",
+        "resultsUrl": "https://external.timing.site/hitchin-5k-2020-results"
+    },
+    {
+        "id": "hitchin-5k-2019",
+        "name": "Hitchin 5KM",
+        "distance": "5K",
+        "date": "2019-09-29",
+        "dateDisplay": "September 29, 2019",
+        "resultsUrl": "https://external.timing.site/hitchin-5k-2019-results"
+    },
+    {
+        "id": "hitchin-5k-2018",
+        "name": "Hitchin 5KM",
+        "distance": "5K",
+        "date": "2018-09-30",
+        "dateDisplay": "September 30, 2018",
+        "resultsUrl": "https://external.timing.site/hitchin-5k-2018-results"
+    },
+    {
+        "id": "hitchin-5k-2017",
+        "name": "Hitchin 5KM",
+        "distance": "5K",
+        "date": "2017-09-24",
+        "dateDisplay": "September 24, 2017",
+        "resultsUrl": "https://external.timing.site/hitchin-5k-2017-results"
+    },
+    {
+        "id": "hitchin-5k-2016",
+        "name": "Hitchin 5KM",
+        "distance": "5K",
+        "date": "2016-09-25",
+        "dateDisplay": "September 25, 2016",
+        "resultsUrl": "https://external.timing.site/hitchin-5k-2016-results"
+    },
+    {
+        "id": "hitchin-5k-2015",
+        "name": "Hitchin 5KM",
+        "distance": "5K",
+        "date": "2015-09-27",
+        "dateDisplay": "September 27, 2015",
+        "resultsUrl": "https://external.timing.site/hitchin-5k-2015-results"
+    }
+]

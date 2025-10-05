@@ -1,0 +1,377 @@
+/* =======================================================
+    GLOBAL COLORS (Controlled by data-theme)
+    =======================================================
+*/
+
+/* Default is Dark Mode (High contrast, sporty) */
+:root, [data-theme="dark"] {
+    --color-primary: #E84F2B;      /* Burnt Orange Accent */
+    --color-background: #1A1A1A;   /* Dark Background */
+    --color-card-bg: #2C2C2C;      /* Slightly Lighter Card */
+    --color-text-header: #FFFFFF;
+    --color-text-body: #CCCCCC;
+    --color-text-secondary: #999999;
+    --shadow-color: rgba(0, 0, 0, 0.5);
+    --btn-hover-bg: #CC4526;
+}
+
+/* Light Mode Overrides */
+[data-theme="light"] {
+    --color-primary: #CC3300;      /* Slightly Darker Orange for contrast */
+    --color-background: #F4F4F4;   /* Light Background */
+    --color-card-bg: #FFFFFF;      /* White Card */
+    --color-text-header: #333333;
+    --color-text-body: #555555;
+    --color-text-secondary: #888888;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --btn-hover-bg: #AA2E00;
+}
+
+
+/* =======================================================
+    BASE STYLES
+    =======================================================
+*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-text-body);
+    transition: background-color 0.5s, color 0.5s;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3 {
+    font-weight: 900;
+    text-transform: uppercase;
+    color: var(--color-text-header);
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--color-primary);
+    color: var(--color-text-header);
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: background-color 0.3s;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: var(--btn-hover-bg);
+}
+
+/* =======================================================
+    HEADER & MODE TOGGLE
+    =======================================================
+*/
+.header {
+    background-color: var(--color-background);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px var(--shadow-color);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: 900;
+    color: var(--color-primary);
+}
+
+.nav-links a {
+    color: var(--color-text-body);
+    padding: 10px 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--color-primary);
+}
+
+.mode-toggle {
+    background: none;
+    border: 2px solid var(--color-text-body);
+    color: var(--color-text-body);
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 20px;
+    transition: all 0.3s;
+}
+
+.mode-toggle:hover {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+}
+
+/* =======================================================
+    HERO SECTION
+    =======================================================
+*/
+.hero {
+    /* Background image is set by script.js, this ensures layout works */
+    background: no-repeat center center/cover;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    padding: 50px 0;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Darker overlay for contrast, slightly transparent in light mode */
+    background: var(--shadow-color); 
+    z-index: 1;
+}
+
+.hero-content {
+    z-index: 2;
+    max-width: 900px;
+}
+
+.hero-content h1 {
+    font-size: 4em;
+    margin-bottom: 15px;
+    color: var(--color-text-header);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.next-race-banner {
+    background-color: var(--color-primary);
+    color: var(--color-text-header);
+    padding: 15px 30px;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    font-weight: 700;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/* =======================================================
+    RACES GRID & CARD
+    =======================================================
+*/
+.races-section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.races-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 50px;
+    color: var(--color-primary);
+}
+
+.races-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.race-card {
+    background-color: var(--color-card-bg);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-bottom: 5px solid var(--color-primary);
+    box-shadow: 0 4px 10px var(--shadow-color);
+}
+
+.race-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px var(--shadow-color);
+}
+
+.race-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.race-card .distance {
+    font-size: 1.8em;
+    font-weight: 900;
+    color: var(--color-primary);
+    margin-bottom: 10px;
+    display: block;
+}
+
+.race-card .date {
+    font-size: 1em;
+    color: var(--color-text-secondary);
+    margin-bottom: 15px;
+    display: block;
+}
+
+.race-card p {
+    margin-bottom: 20px;
+}
+
+/* =======================================================
+    FOOTER
+    =======================================================
+*/
+.footer {
+    background-color: #0d0d0d;
+    padding: 40px 0;
+    text-align: center;
+    font-size: 0.9em;
+    color: var(--color-text-secondary);
+}
+
+/* =======================================================
+    DROPDOWN MENU STYLES (REQUIRED FIX)
+    =======================================================
+*/
+.dropdown-menu-item {
+    position: relative;
+    display: inline-block;
+}
+
+/* 🛑 THIS HIDES THE DROPDOWN LIST BY DEFAULT 🛑 */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--color-card-bg); /* Use card background for the menu */
+    min-width: 250px;
+    box-shadow: 0 8px 16px var(--shadow-color);
+    z-index: 10;
+    list-style: none;
+    padding: 10px 0;
+    top: 100%; 
+    left: 0;
+    border-radius: 0 0 5px 5px;
+}
+
+.dropdown-content li {
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-content a {
+    color: var(--color-text-body);
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+    text-transform: none; /* Keep titles readable */
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.dropdown-content a:hover {
+    background-color: var(--color-background); /* Subtle hover effect */
+    color: var(--color-primary);
+}
+
+/* 🟢 THIS SHOWS THE DROPDOWN MENU ON HOVER 🟢 */
+.dropdown-menu-item:hover .dropdown-content {
+    display: block;
+}
+
+/* =======================================================
+    RESULTS ARCHIVE PAGE STYLES
+    =======================================================
+*/
+.results-page-header {
+    /* Use colors from the theme */
+    background-color: var(--color-background);
+    padding: 60px 0 30px;
+    text-align: center;
+    border-bottom: 3px solid var(--color-primary); /* Visual separator */
+}
+
+.results-page-header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: var(--color-primary);
+}
+
+.intro-text {
+    max-width: 800px;
+    margin: 0 auto;
+    color: var(--color-text-body);
+    font-size: 1.1em;
+    padding-bottom: 20px;
+}
+
+.results-list-section {
+    padding: 50px 0 80px;
+}
+
+.results-grid {
+    display: grid;
+    /* Responsive grid: min 300px wide, 1fr max */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+/* Styling for each result link card - very similar to .race-card but simplified */
+.results-card {
+    background-color: var(--color-card-bg);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-top: 5px solid var(--color-primary); /* Border on top for distinct look */
+    box-shadow: 0 4px 10px var(--shadow-color);
+}
+
+.results-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px var(--shadow-color);
+}
+
+.results-card h3 {
+    font-size: 1.8em;
+    margin-bottom: 5px;
+    color: var(--color-text-header);
+}
+
+.results-card .distance {
+    display: block;
+    font-size: 1.1em;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 10px;
+}
+
+.results-card .date {
+    display: block;
+    font-size: 0.9em;
+    color: var(--color-text-secondary);
+    margin-bottom: 25px;
+}

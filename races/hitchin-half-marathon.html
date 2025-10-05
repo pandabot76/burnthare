@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">Burnt Hare | Event Details</title>
+    
+    <link rel="stylesheet" href="../assets/css/style.css"> 
+    <link rel="stylesheet" href="../assets/css/race-page.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <input type="hidden" id="race-id-selector" data-race-id="hitchin-half">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container nav">
+            <a href="../index.html" class="logo">BURNT HARE</a>
+            <div style="display: flex; align-items: center;">
+                <ul class="nav-links" style="list-style: none; display: flex;">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#races">Races</a></li>
+                    <li><a href="/results.html">Results</a></li>
+                    <li><a href="/support.html">Support</a></li>
+                </ul>
+                <button id="theme-toggle" class="mode-toggle">Toggle Mode</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero-race" id="race-hero">
+        <div class="container hero-content-race">
+            <h1 id="race-title-hero">Loading Race...</h1>
+            <p style="color: white; font-size: 1.2em;" id="race-date-hero"></p>
+        </div>
+    </section>
+
+    <main class="container race-details-grid">
+        <div class="main-content">
+            <h2>Race Overview</h2>
+            <div class="section-content">
+                <p id="race-description">The full descriptive paragraph will be loaded here.</p>
+                <div id="testimonials-container">
+                    </div>
+            </div>
+
+            <h2 style="margin-top: 40px;">Course Map</h2>
+            <div class="section-content course-map">
+                <img id="course-map-image" src="" alt="Course Map Placeholder">
+            </div>
+            
+            <h2 style="margin-top: 40px;">Race Day Instructions</h2>
+            <div class="section-content">
+                <p>Detailed instructions for timing chip collection, bag drop-off, and start times will be available here 1 week before the event. Please arrive 60 minutes before your scheduled start time.</p>
+                <ul>
+                    <li><b>Start Location:</b> Hitchin Town Centre (Exact spot TBC)</li>
+                    <li><b>Parking:</b> Designated parking areas will be signposted.</li>
+                    <li><b>Cut-off Time:</b> (Varies by race, e.g., 3 hours for the Half Marathon)</li>
+                </ul>
+            </div>
+
+            <h2 style="margin-top: 40px;">Registration & Kit</h2>
+            <div class="section-content">
+                <p>Registration packs (race number, timing chip, etc.) can be collected at the designated registration tent on race morning or the day before at the race expo.</p>
+                <p><b>Mandatory Kit:</b> <span id="kit-details">A basic first aid kit and race vest are recommended.</span></p>
+            </div>
+            
+            <h2 style="margin-top: 40px;">Rules & Prizes</h2>
+            <div class="section-content">
+                <p>Prizes will be awarded for the top three male and female finishers, as well as age group categories (V40, V50, etc.). All finishers receive a custom Burnt Hare medal.</p>
+                <p><b>Rules:</b> No headphones allowed on open roads for safety. Full race rules are linked in your confirmation email.</p>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <h3>Race Details</h3>
+            <div style="margin-top: 15px;">
+                <p><strong>Distance:</strong> <span id="sidebar-distance"></span></p>
+                <p><strong>Date:</strong> <span id="sidebar-date"></span></p>
+                <p style="margin-top: 20px;"><strong>Entry Cost</strong></p>
+                <div class="cost-detail" id="sidebar-cost"></div>
+                <a href="#" class="btn" id="entry-button" style="width: 100%; text-align: center;">SECURE YOUR PLACE NOW</a>
+                <p style="margin-top: 10px; font-size: 0.8em; color: var(--color-text-secondary);">Entry fee includes timing chip, medal, and free high-quality photos.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Burnt Hare Events. All rights reserved. | <a href="/privacy">Privacy Policy</a></p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/race-script.js"></script>
+</body>
+</html>
