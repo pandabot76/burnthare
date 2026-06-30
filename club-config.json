@@ -1,0 +1,73 @@
+{
+  "club": {
+    "name": "Hitchin Running Club",
+    "shortName": "Hitchin Hares",
+    "tagline": "A friendly, all-pace running club based in Hitchin. Three sessions a week, every distance from first 5K to marathon PB, and a club that turns up for each other \u2014 rain, shine, or thick winter fog.",
+    "established": "Proudly Hitchin-grown"
+  },
+  "stats": [
+    { "number": "120+", "label": "Active members" },
+    { "number": "3", "label": "Sessions every week" },
+    { "number": "10K", "label": "Typical club run distance" },
+    { "number": "Est.", "label": "Proudly Hitchin-grown" }
+  ],
+  "sessions": [
+    {
+      "day": "Monday",
+      "title": "Intervals",
+      "time": "7:00PM",
+      "description": "New for this year \u2014 structured speedwork at the track, built to make race pace feel comfortable.",
+      "meet": "New location weekly (check Facebook/Spond for confirmation)"
+    },
+    {
+      "day": "Wednesday",
+      "title": "Beginners & Club Run",
+      "time": "6:30PM (beginners) / 7:00PM (club)",
+      "description": "In summer this heads out into local countryside, in winter it stays around town. We aim to cover around 10km as a club run.",
+      "meet": "St Mary's car park, Hitchin"
+    },
+    {
+      "day": "Sunday",
+      "title": "Club Run",
+      "time": "9:00AM",
+      "description": "Typically cross country with a 10km distance as the target.",
+      "meet": "St Mary's car park, Hitchin"
+    }
+  ],
+  "membership": {
+    "price": "\u00a335",
+    "period": "/ year",
+    "description": "Membership includes various running events, mid-week leagues, and a number of non-running socials each year such as a summer BBQ and Christmas do.",
+    "note": "Sign up via Facebook to say hello, then come along to your first session at St Mary's car park.",
+    "joinSteps": [
+      {
+        "title": "Sign up via Facebook",
+        "description": "Our Facebook page is the best place to say hello and ask any questions before your first run."
+      },
+      {
+        "title": "Come along to your first session",
+        "description": "Join us at St Mary's car park, Wednesday or Sunday. No minimum pace, no pressure."
+      },
+      {
+        "title": "Join the club on Spond",
+        "description": "Once you're part of the club, Spond is how we publish running events and gather feedback."
+      }
+    ]
+  },
+  "links": {
+    "strava": "https://www.strava.com/clubs/Hitchinrunningclub",
+    "facebook": "https://www.facebook.com/hitchinrunningclub",
+    "burntHare": "http://www.burnthare.com",
+    "spond": "#",
+    "_spondNote": "Replace the # above with the club's actual Spond group URL."
+  },
+  "contact": {
+    "email": "hello@hitchinrunningclub.co.uk",
+    "location": "St Mary's car park, Hitchin, Hertfordshire, SG5 1AB",
+    "trackLocation": "Ridlins Athletic Track, Stevenage (monthly club trip)"
+  },
+  "events": {
+    "description": "We run a number of events under the banner of Hitchin Hares, including the Herts Winter Cross Country League and the Summer Mid-Week League. We're also linked with Burnt Hare, who bring great running events to Hitchin and the surrounding Hertfordshire countryside.",
+    "learnMoreUrl": "https://www.hitchinrunningclub.co.uk/club-runs"
+  }
+}
