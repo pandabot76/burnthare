@@ -1,0 +1,57 @@
+[
+  {
+    "eventId": "hitchin-triathlon",
+    "eventName": "The Hitchin Triathlon",
+    "years": [
+      { "year": 2025, "url": "https://results.racetimingsolutions.co.uk/results.aspx?CId=16269&RId=22109" },
+      { "year": 2024, "url": "https://results.racetimingsolutions.co.uk/results.aspx?CId=16269&RId=1882" },
+      { "year": 2023, "url": "https://in.njuko.com/hitchin-triathlon-20241688062819812?currentPage=select-competition" },
+      { "year": 2022, "url": "https://results.racetimingsolutions.co.uk/results.aspx?CId=16269&RId=1439" },
+      { "year": 2019, "url": "https://racetecresults.com/results.aspx?CId=16269&RId=1085" },
+      { "year": 2018, "url": "https://racetimingsolutions.racetecresults.com/Results.aspx?CId=16269&RId=832" },
+      { "year": 2017, "url": "https://racetimingsolutions.racetecresults.com/results.aspx?CId=16269&RId=733" }
+    ]
+  },
+  {
+    "eventId": "hitchin-town-centre-5k",
+    "eventName": "Hitchin Town Centre 5km",
+    "years": [
+      { "year": 2025, "url": "https://my.raceresult.com/214708/results" },
+      { "year": 2024, "url": "https://my.raceresult.com/214708/results" },
+      { "year": 2023, "url": "https://my.raceresult.com/214708/results" },
+      { "year": 2022, "url": "https://my.raceresult.com/214708/results" },
+      { "year": 2021, "url": "https://www.racesonline.uk/results/2021-results/hitchin-5k/" },
+      { "year": 2020, "url": "https://www.racesonline.uk/results/2020-results/hitchin-5k/" },
+      { "year": 2019, "url": "https://www.racesonline.uk/results/2019-results/hitchin-5k/" },
+      { "year": 2018, "url": "https://www.racesonline.uk/results/2018-results/hitchin-10k-2018/" },
+      { "year": 2017, "url": "https://www.racesonline.uk/results/2017-results/hitchin-town-centre-5k/" },
+      { "year": 2016, "url": "https://www.racesonline.uk/results/2016-results/hitchin-5k-2016/" },
+      { "year": 2015, "url": "https://www.racesonline.uk/results/2015-results/hitchin-town-centre-5k-2015/" }
+    ]
+  },
+  {
+    "eventId": "hitchin-10k",
+    "eventName": "The Hitchin 10km",
+    "years": [
+      { "year": 2027, "url": "https://my.raceresult.com/397503/results" },
+      { "year": 2026, "url": "https://my.raceresult.com/339501/results" },
+      { "year": 2024, "url": "https://my.raceresult.com/242800/results" },
+      { "year": 2023, "url": "https://my.raceresult.com/235718/results" },
+      { "year": 2022, "url": "https://my.raceresult.com/198568/" }
+    ]
+  },
+  {
+    "eventId": "hitchin-hard-half-and-10",
+    "eventName": "Hitchin Hard Half & 10",
+    "years": [
+      { "year": 2026, "url": "https://my.raceresult.com/344417/" },
+      { "year": 2025, "url": "https://my.raceresult.com/294190/" },
+      { "year": 2024, "url": "https://my.raceresult.com/251102/participants" }
+    ]
+  },
+  {
+    "eventId": "great-herts-aonb",
+    "eventName": "The Great Herts AONB",
+    "years": []
+  }
+]

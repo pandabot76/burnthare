@@ -1,0 +1,10 @@
+{
+  "siteName": "BurntHare",
+  "tagline": "Hitchin's Premier Endurance Events",
+  "nav": [
+    { "label": "Events", "href": "/#upcoming-events" },
+    { "label": "Results", "href": "/results" },
+    { "label": "About", "href": "/about" },
+    { "label": "Contact", "href": "/about#contact" }
+  ]
+}

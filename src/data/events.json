@@ -1,0 +1,261 @@
+[
+  {
+    "id": "hitchin-triathlon",
+    "name": "The Hitchin Triathlon",
+    "date": "2026-07-05",
+    "location": "Butts Close / Hitchin Outdoor Pool, Fishponds Road, Hitchin",
+    "tagline": "Sprint · Nitro · Nano · Atom — 4 distances for all ages",
+    "image": "hitchin-triathlon.jpg",
+    "poster": "hitchin-triathlon.jpg",
+    "bookingUrl": "https://www.letsdothis.com/gb/o/155366/checkout/ticket?eventId=253411&occurrenceId=21111160942&login=skipped",
+    "resultsUrl": "https://results.racetimingsolutions.co.uk/?CId=16269",
+    "summary": "BurntHare's flagship multisport event returns to Hitchin's much-loved outdoor pool. Starting and finishing at Butts Close, the Triathlon offers four distances so the whole family can take part on the same day, from first-timers to seasoned age-groupers.",
+    "races": [
+      {
+        "name": "The Sprint",
+        "distance": "400m swim · 20km bike · 5km run",
+        "ages": "16+"
+      },
+      {
+        "name": "The Nitro",
+        "distance": "200m swim · 12km bike · 2.5km run",
+        "ages": "13+"
+      },
+      {
+        "name": "The Atom",
+        "distance": "200m swim · 2km bike · 1.5km run",
+        "ages": "Children 11–14"
+      },
+      {
+        "name": "The Nano",
+        "distance": "100m swim · 2km bike · 1.5km run",
+        "ages": "Children 7–10"
+      }
+    ],
+    "course": {
+      "description": "An open-water-style pool swim at Hitchin Outdoor Pool, followed by a closed-road bike loop out towards the surrounding villages, finishing with a flat, fast run back into Butts Close. Fully marshalled throughout with mile markers on the run.",
+      "maps": [
+        {
+          "label": "Sprint bike route — 20.3km",
+          "image": "triathlon-bike-sprint.jpg"
+        },
+        {
+          "label": "Nitro bike route — 11.9km",
+          "image": "triathlon-bike-nitro.jpg"
+        },
+        {
+          "label": "Run route — 2.5km lap (run twice for the Sprint)",
+          "image": "triathlon-run-loop.jpg"
+        }
+      ]
+    },
+    "registration": {
+      "feeNote": "From £25 (Nano/Atom) to £55 (Sprint), depending on distance",
+      "deadline": "Online entries close Thursday 2 July 2026, 11:59pm",
+      "notes": [
+        "Entry includes timing chip, event t-shirt and finisher's medal",
+        "Bikes can be racked from 6:30am on race day — overnight secure racking also available the night before",
+        "Body marking required for all adults — registration and transition close at 6:20am"
+      ]
+    },
+    "rules": [
+      "British Triathlon race rules apply to the Sprint and Nitro distances",
+      "Helmets must be worn and fastened at all times while on the bike, including in transition",
+      "No drafting on the bike course for the Sprint distance",
+      "Children's races (Nano/Atom) must be accompanied to registration by a parent or guardian",
+      "Headphones are not permitted on any race distance",
+      "Strictly no members of the public allowed inside transition"
+    ],
+    "prizes": [
+      "Medal for every finisher, every distance",
+      "Event t-shirt included in all entries",
+      "Trophies for 1st, 2nd and 3rd overall (male and female) in the Sprint and Nitro",
+      "Age-category prizes across all adult distances",
+      "Special finisher certificates for all Nano and Atom participants"
+    ],
+    "locationDetails": {
+      "address": "Butts Close, Fishponds Road, Hitchin, Hertfordshire, SG5 1PT",
+      "parking": "Parking is available at the Hitchin Swimming Pool (paid and display — usually free on Sundays). There are other free spaces nearby if you know where to look, and it's a short walk from Hitchin station.",
+      "mapQuery": "Hitchin Outdoor Pool, Fishponds Road, Hitchin"
+    }
+  },
+  {
+    "id": "hitchin-town-centre-5k",
+    "name": "Hitchin Town Centre 5km",
+    "date": "2026-09-27",
+    "location": "Hitchin town centre, Hertfordshire",
+    "tagline": "Celebrating 10 years · 5km road race",
+    "image": "hitchin-5k.jpg",
+    "poster": "hitchin-5k.jpg",
+    "bookingUrl": "https://my.raceresult.com/364463/info",
+    "resultsUrl": "https://results.racetimingsolutions.co.uk/?CId=16269",
+    "summary": "Now in its 10th year, the Hitchin Town Centre 5km is BurntHare's most popular event — a fast, flat course through the heart of Hitchin, taking in the historic market square, the riverside path and the iconic steel statues by Cooper's Yard.",
+    "races": [
+      {
+        "name": "Hitchin Town Centre 5km",
+        "distance": "5km road race (two 2.5km laps)",
+        "ages": "Open"
+      }
+    ],
+    "course": {
+      "description": "Two 2.5km laps through Hitchin town centre, fully marked and marshalled. Starting on the High Street, the course weaves across the river and heads up past Windmill Hill, before looping around onto Payne's Park and down towards the start.",
+      "maps": [
+        {
+          "label": "5km route — two laps of the town centre",
+          "image": "hitchin-5k-route.jpg"
+        }
+      ]
+    },
+    "registration": {
+      "feeNote": "Entry fees vary — see the booking page for current pricing",
+      "deadline": "Online entries close the week of the race",
+      "notes": [
+        "Entry includes event t-shirt and finisher's medal",
+        "Chip timing throughout"
+      ]
+    },
+    "rules": [
+      "UK Athletics rules apply",
+      "No dogs, buggies or cycles on the course",
+      "No headphones for safety on the closed-road sections"
+    ],
+    "prizes": [
+      "Medal for every finisher",
+      "Event t-shirt included in all entries",
+      "Trophies for 1st, 2nd and 3rd overall (male and female)",
+      "Age-category prizes in 10-year bands"
+    ],
+    "locationDetails": {
+      "address": "Hitchin High Street, Hitchin, Hertfordshire, SG5 1AY",
+      "parking": "Town centre car parks (Queen Street, Portmill Lane, Hollow Lane) are a short walk away. Please don't park along the race route, and parking is usually limited so consider car-sharing or public transport.",
+      "mapQuery": "Hitchin High Street, Hitchin"
+    }
+  },
+  {
+    "id": "hitchin-10k",
+    "name": "The Hitchin 10km",
+    "date": "2027-05-02",
+    "location": "Hitchin, Hertfordshire",
+    "tagline": "10km road race + Children's Golden Mile",
+    "image": "hitchin-10k.jpg",
+    "poster": "hitchin-10k.jpg",
+    "bookingUrl": "https://my.raceresult.com/397503/",
+    "resultsUrl": "https://my.raceresult.com/339501/",
+    "summary": "Welcome to The Hitchin 10km, which also incorporates the Herts County Senior Championships. It's the only 10km in the region that starts and finishes in a market square — a beautiful route out towards Gosmore and Charlton villages before that famous Town Centre finish, paired with the ever-popular Children's Golden Mile.",
+    "races": [
+      {
+        "name": "The Hitchin 10km",
+        "distance": "10km road race",
+        "ages": "15+"
+      },
+      {
+        "name": "Children's Golden Mile",
+        "distance": "1 mile fun run",
+        "ages": "5–14"
+      }
+    ],
+    "course": {
+      "description": "Starting right in the town centre, the first kilometre (the north loop) is on closed roads going anti-clockwise around town. Runners then head out towards Gosmore and Charlton to complete a clockwise south loop, before heading back into Hitchin for another 1km loop and that famous Town Centre finish. Classified flat, with one small climb.",
+      "maps": [
+        {
+          "label": "10km route — 10.00km, Hitchin out to Gosmore and Charlton",
+          "image": "hitchin-10k-route.jpg"
+        }
+      ]
+    },
+    "registration": {
+      "feeNote": "10km and Children's Golden Mile — see the booking page for current pricing",
+      "deadline": "Online entries close the week of the race",
+      "notes": [
+        "Entry includes finisher's medal",
+        "The minimum age for the 10km is 15 on race day — there's a Golden Mile for ages 5–14",
+        "No music players permitted due to road crossings on the course"
+      ]
+    },
+    "rules": [
+      "UK Athletics rules apply to the 10km",
+      "Minimum age of race entry is 15 on race day; Golden Mile is for ages 5–14",
+      "This race is not traffic-free — listen to marshals at all times, especially at road crossings",
+      "No music players are permitted due to the nature of the course"
+    ],
+    "prizes": [
+      "Medal for every 10km finisher",
+      "Trophies for 1st, 2nd and 3rd overall (male and female)",
+      "Every Golden Mile finisher receives a certificate and small prize"
+    ],
+    "locationDetails": {
+      "address": "Hitchin town centre, Hertfordshire, SG5",
+      "parking": "No on-site parking, but there's a car park across the road. Park & stride is recommended — town centre car parks fill up quickly on race morning.",
+      "mapQuery": "Hitchin town centre"
+    }
+  },
+  {
+    "id": "great-herts-aonb",
+    "name": "The Great Herts AONB",
+    "date": "2027-06-06",
+    "location": "Hertfordshire Area of Outstanding Natural Beauty",
+    "tagline": "Marathon · Half · 10km — run or ride",
+    "image": "aonb.jpg",
+    "poster": "aonb.jpg",
+    "bookingUrl": "https://my.raceresult.com/404466/info",
+    "resultsUrl": "https://results.racetimingsolutions.co.uk/?CId=16269",
+    "summary": "Brand new for 2027 — a marathon, half marathon and 10km through the Hertfordshire Area of Outstanding Natural Beauty, with every distance open to runners and cyclists alike. Choose your distance, then choose how you cover it.",
+    "races": [
+      {
+        "name": "AONB Marathon",
+        "distance": "42.2km",
+        "ages": "18+",
+        "disciplines": [
+          "Run",
+          "Ride"
+        ]
+      },
+      {
+        "name": "AONB Half Marathon",
+        "distance": "21.1km",
+        "ages": "16+",
+        "disciplines": [
+          "Run",
+          "Ride"
+        ]
+      },
+      {
+        "name": "AONB 10km",
+        "distance": "10km",
+        "ages": "15+",
+        "disciplines": [
+          "Run",
+          "Ride"
+        ]
+      }
+    ],
+    "course": {
+      "description": "A point-to-point route through protected Hertfordshire countryside, with off-road sections suitable for both running and gravel/mountain bikes. Feed stations roughly every 8km. Shorter distances are subsets of the full marathon route."
+    },
+    "registration": {
+      "feeNote": "From £22 (10km) to £48 (Marathon) — same price whether running or riding",
+      "deadline": "Online entries close Thursday 3 June 2027, 11:59pm",
+      "notes": [
+        "Choose your discipline (run or ride) when you enter — separate results and prizes for each",
+        "Bikes must be suitable for off-road/gravel terrain; no road bikes",
+        "Coach transfer back to the start available for point-to-point finishers"
+      ]
+    },
+    "rules": [
+      "This is a multi-terrain trail/gravel event — appropriate footwear or tyres are required",
+      "Riders must wear a helmet at all times on the course",
+      "Cut-off times apply on the Marathon distance for both disciplines",
+      "Respect the AONB: no littering, stay on marked routes"
+    ],
+    "prizes": [
+      "Medal for every finisher, every distance, every discipline",
+      "Separate trophies for top 3 runners and top 3 riders per distance",
+      "Finisher t-shirt for all Marathon and Half entrants"
+    ],
+    "locationDetails": {
+      "address": "Start: Knebworth area, Hertfordshire (exact start venue confirmed closer to the date)",
+      "parking": "Event parking and signage will be confirmed nearer the date — coach transfers provided for the point-to-point finish.",
+      "mapQuery": "Knebworth, Hertfordshire"
+    }
+  }
+]

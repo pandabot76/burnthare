@@ -1,0 +1,27 @@
+{
+  "history": [
+    "BurntHare started in 2016 with a single race around Hitchin town centre and a few dozen runners. Ten years on, we run four events a year across running, triathlon and multisport, with thousands of entrants and a small army of volunteers who make it all possible.",
+    "We're run by local people, for local people — every event is designed to showcase Hitchin and the surrounding Hertfordshire countryside, while raising money for local good causes along the way."
+  ],
+  "testimonials": [
+    {
+      "quote": "Best organised local 10k I've ever run. Marshals everywhere, great atmosphere, and the medal is gorgeous.",
+      "name": "Sarah K.",
+      "context": "Hitchin 10km, 2025"
+    },
+    {
+      "quote": "My first ever triathlon and the BurntHare team made it so welcoming. Already signed up for next year.",
+      "name": "Tom R.",
+      "context": "Hitchin Triathlon, 2025"
+    },
+    {
+      "quote": "The kids absolutely loved the Golden Mile — brilliant family morning out.",
+      "name": "The Patel family",
+      "context": "Hitchin 10km & Golden Mile, 2024"
+    }
+  ],
+  "contact": {
+    "email": "Burntharefamily@gmail.com",
+    "facebook": "https://www.facebook.com/burnthare/"
+  }
+}
