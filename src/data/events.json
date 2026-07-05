@@ -53,7 +53,7 @@
       "feeNote": "From £25 (Nano/Atom) to £55 (Sprint), depending on distance",
       "deadline": "Online entries close Thursday 2 July 2026, 11:59pm",
       "notes": [
-        "Entry includes timing chip, event t-shirt and finisher's medal",
+        "Entry includes timing chip, finisher's medal",
         "Bikes can be racked from 6:30am on race day — overnight secure racking also available the night before",
         "Body marking required for all adults — registration and transition close at 6:20am"
       ]
@@ -68,7 +68,7 @@
     ],
     "prizes": [
       "Medal for every finisher, every distance",
-      "Event t-shirt included in all entries",
+      "Optional Event t-shirt",
       "Trophies for 1st, 2nd and 3rd overall (male and female) in the Sprint and Nitro",
       "Age-category prizes across all adult distances",
       "Special finisher certificates for all Nano and Atom participants"
@@ -121,7 +121,7 @@
     ],
     "prizes": [
       "Medal for every finisher",
-      "Event t-shirt included in all entries",
+      "Optional Event t-shirt",
       "Trophies for 1st, 2nd and 3rd overall (male and female)",
       "Age-category prizes in 10-year bands"
     ],
@@ -253,9 +253,9 @@
       "Finisher t-shirt for all Marathon and Half entrants"
     ],
     "locationDetails": {
-      "address": "Start: Knebworth area, Hertfordshire (exact start venue confirmed closer to the date)",
+      "address": "Start: Gosmore area, Hertfordshire (exact start venue confirmed closer to the date)",
       "parking": "Event parking and signage will be confirmed nearer the date — coach transfers provided for the point-to-point finish.",
-      "mapQuery": "Knebworth, Hertfordshire"
+      "mapQuery": "Gosmore, Hertfordshire"
     }
   }
 ]
