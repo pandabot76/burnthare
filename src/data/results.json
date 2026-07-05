@@ -3,6 +3,7 @@
     "eventId": "hitchin-triathlon",
     "eventName": "The Hitchin Triathlon",
     "years": [
+      { "year": 2026, "url": "https://results.racetimingsolutions.co.uk/results.aspx?CId=16269&RId=24275" },
       { "year": 2025, "url": "https://results.racetimingsolutions.co.uk/results.aspx?CId=16269&RId=22109" },
       { "year": 2024, "url": "https://results.racetimingsolutions.co.uk/results.aspx?CId=16269&RId=1882" },
       { "year": 2023, "url": "https://in.njuko.com/hitchin-triathlon-20241688062819812?currentPage=select-competition" },
