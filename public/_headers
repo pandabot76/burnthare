@@ -1,0 +1,30 @@
+/*
+  # Prevent browsers guessing content types (MIME sniffing)
+  X-Content-Type-Options: nosniff
+
+  # Only allow this page to be embedded in an iframe on the same origin
+  X-Frame-Options: SAMEORIGIN
+
+  # Limit referrer info sent to external sites (booking/results partner sites)
+  Referrer-Policy: strict-origin-when-cross-origin
+
+  # Disable browser features we don't use
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=()
+
+  # Force HTTPS for 1 year, include subdomains
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+
+  # Content Security Policy:
+  # - default: only this origin
+  # - scripts: this origin + Google Fonts script (for font loading)
+  # - styles: this origin + Google Fonts + inline styles (Tailwind uses these)
+  # - fonts: Google Fonts CDN
+  # - images: this origin + data URIs (favicons etc)
+  # - frames: Google Maps embed only
+  # - connect: this origin only (no external API calls from client code)
+  # - object/base: locked down completely
+  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; frame-src https://www.google.com; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'
+
+  # Control cross-origin resource policies
+  Cross-Origin-Opener-Policy: same-origin
+  Cross-Origin-Resource-Policy: same-origin

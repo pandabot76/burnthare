@@ -214,6 +214,8 @@ export default function EventPage() {
                 src={mapEmbedSrc}
                 className="w-full h-[260px] rounded-xl border border-neutral-200 dark:border-neutral-800"
                 loading="lazy"
+                sandbox="allow-scripts allow-same-origin"
+                referrerPolicy="no-referrer"
               />
             )}
           </div>

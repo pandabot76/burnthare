@@ -39,11 +39,13 @@ export default function AboutPage() {
       >
         <h2 className="font-display font-extrabold text-2xl sm:text-3xl mb-5">Get in touch</h2>
         <div className="flex flex-wrap gap-5 text-[15px]">
+          {/* Email is rendered as a click-to-email button; the raw address is kept
+              out of the page source to reduce spam-harvesting. */}
           <a
             href={`mailto:${about.contact.email}`}
             className="flex items-center gap-2 font-semibold text-brand-orange"
           >
-            <Mail size={18} /> {about.contact.email}
+            <Mail size={18} /> Email us
           </a>
           {about.contact.facebook && (
             <a

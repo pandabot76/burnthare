@@ -2,13 +2,26 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/images/favicon.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Security meta tags (backup for hosts that don't support _headers) -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; frame-src https://www.google.com; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'"
+    />
+
+    <!-- Favicon & identity -->
+    <link rel="icon" type="image/png" href="/images/favicon.png" />
     <title>BurntHare — Hitchin's Premier Endurance Events</title>
     <meta
       name="description"
       content="Running, triathlon and multisport events in and around Hitchin, Hertfordshire."
     />
+
+    <!-- Google Fonts — loaded from an allowed CSP origin -->
     <link
       href="https://fonts.googleapis.com/css2?family=Big+Shoulders:wght@700;800&family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
