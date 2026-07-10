@@ -1,7 +1,8 @@
 import { useParams, Link } from 'react-router-dom'
-import { MapPin, Calendar, Image as ImageIcon } from 'lucide-react'
+import { MapPin, Calendar, Clock, Image as ImageIcon, ArrowUpRight } from 'lucide-react'
 import eventsData from '../data/events.json'
-import { formatEventDate, getUpcomingEvents } from '../utils/events.js'
+import partnersData from '../data/partners.json'
+import { formatEventDate, formatStartTime, getEventState, getMergedVisibleEvents, getEventImageSrc } from '../utils/events.js'
 import IconButton from '../components/IconButton.jsx'
 import EventSectionNav from '../components/EventSectionNav.jsx'
 import Section from '../components/Section.jsx'
@@ -25,21 +26,25 @@ export default function EventPage() {
     )
   }
 
-  // Same source of truth as the homepage carousel — just excludes whichever
-  // event the visitor is currently looking at.
-  const otherUpcomingEvents = getUpcomingEvents(eventsData).filter((e) => e.id !== event.id)
+  const state = getEventState(event)
+  const isRecent = state === 'recent'
+  const startTime = formatStartTime(event.startTime)
+  const posterSrc = getEventImageSrc(event)
 
-  // Build the section nav from whichever fields actually have content —
-  // an event missing "rules", for example, just won't show that tab.
+  // Carousel includes partner events, same as the homepage.
+  const otherEvents = getMergedVisibleEvents(eventsData, partnersData).filter(
+    (e) => e.id !== event.id,
+  )
+
   const sections = [
     { id: 'overview', label: 'Overview', show: true },
     { id: 'races', label: 'Races', show: event.races?.length },
     { id: 'course', label: 'Course', show: event.course },
-    { id: 'registration', label: 'Registration', show: event.registration },
+    { id: 'registration', label: 'Registration', show: event.registration && !isRecent },
     { id: 'rules', label: 'Rules', show: event.rules?.length },
     { id: 'prizes', label: 'Prizes', show: event.prizes?.length },
     { id: 'location', label: 'Location', show: event.locationDetails },
-    { id: 'upcoming-events', label: 'Upcoming events', show: otherUpcomingEvents.length },
+    { id: 'upcoming-events', label: 'Other events', show: otherEvents.length },
   ].filter((s) => s.show)
 
   const mapEmbedSrc = event.locationDetails?.mapQuery
@@ -51,20 +56,30 @@ export default function EventPage() {
       {/* Poster / banner */}
       <div className="max-w-6xl mx-auto px-6 pt-6">
         <img
-          src={`/images/events/${event.poster || event.image}`}
+          src={posterSrc}
           alt={event.name}
-          className="w-full h-auto block rounded-xl"
+          className={`w-full h-auto block rounded-xl ${isRecent ? 'grayscale opacity-75' : ''}`}
         />
       </div>
 
       {/* Title block */}
       <div className="max-w-6xl mx-auto px-6 pt-8 pb-7">
+        {isRecent && (
+          <span className="inline-block mb-3 text-xs font-bold uppercase tracking-wide px-3 py-1.5 rounded-full bg-neutral-100 dark:bg-neutral-800 text-neutral-500 dark:text-neutral-400">
+            Race complete
+          </span>
+        )}
         <h1 className="font-display font-extrabold text-4xl sm:text-5xl tracking-tight">{event.name}</h1>
 
         <div className="mt-3 flex flex-wrap gap-x-6 gap-y-1.5 text-neutral-600 dark:text-neutral-400 text-[15px]">
           <span className="flex items-center gap-1.5">
             <Calendar size={16} /> {formatEventDate(event.date)}
           </span>
+          {startTime && (
+            <span className="flex items-center gap-1.5">
+              <Clock size={16} /> Start {startTime}
+            </span>
+          )}
           <span className="flex items-center gap-1.5">
             <MapPin size={16} /> {event.location}
           </span>
@@ -73,17 +88,39 @@ export default function EventPage() {
         <p className="mt-2 text-brand-orange font-semibold">{event.tagline}</p>
 
         <div className="mt-5 flex flex-wrap gap-3">
-          <IconButton href={event.bookingUrl} variant="primary" icon="go">
-            Enter race
-          </IconButton>
-          <a
-            href={`/images/events/${event.poster || event.image}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-4 py-2.5 text-[15px] font-semibold rounded-lg border-2 border-neutral-300 dark:border-neutral-600 hover:border-neutral-400 dark:hover:border-neutral-400 transition-colors"
-          >
-            <ImageIcon size={16} strokeWidth={2.5} /> View poster
-          </a>
+          {isRecent ? (
+            // Race finished — show Results link if available, no Enter button
+            event.resultsUrl && (
+              <a
+                href={event.resultsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-4 py-2.5 text-[15px] font-semibold rounded-lg bg-brand-orange text-white hover:bg-brand-orange-dark transition-colors"
+              >
+                <ArrowUpRight size={16} strokeWidth={2.5} /> View results
+              </a>
+            )
+          ) : (
+            <>
+              {event.bookingUrl ? (
+                <IconButton href={event.bookingUrl} variant="primary" icon="go">
+                  Enter race
+                </IconButton>
+              ) : (
+                <span className="inline-flex items-center gap-2 px-4 py-2.5 text-sm font-bold uppercase tracking-wide rounded-lg bg-orange-50 dark:bg-orange-950 text-brand-orange dark:text-orange-400 border border-orange-200 dark:border-orange-900">
+                  Entry coming soon
+                </span>
+              )}
+              <a
+                href={`/images/events/${event.poster || event.image}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-4 py-2.5 text-[15px] font-semibold rounded-lg border-2 border-neutral-300 dark:border-neutral-600 hover:border-neutral-400 dark:hover:border-neutral-400 transition-colors"
+              >
+                <ImageIcon size={16} strokeWidth={2.5} /> View poster
+              </a>
+            </>
+          )}
         </div>
       </div>
 
@@ -151,7 +188,7 @@ export default function EventPage() {
         </Section>
       )}
 
-      {event.registration && (
+      {event.registration && !isRecent && (
         <Section id="registration" title="Registration">
           <div className="max-w-3xl">
             <p className="font-semibold text-lg">{event.registration.feeNote}</p>
@@ -166,9 +203,15 @@ export default function EventPage() {
               </ul>
             )}
             <div className="mt-5">
-              <IconButton href={event.bookingUrl} variant="primary" icon="go">
-                Enter race
-              </IconButton>
+              {event.bookingUrl ? (
+                <IconButton href={event.bookingUrl} variant="primary" icon="go">
+                  Enter race
+                </IconButton>
+              ) : (
+                <span className="inline-flex items-center gap-2 px-4 py-2.5 text-sm font-bold uppercase tracking-wide rounded-lg bg-orange-50 dark:bg-orange-950 text-brand-orange dark:text-orange-400 border border-orange-200 dark:border-orange-900">
+                  Entry coming soon — check back shortly
+                </span>
+              )}
             </div>
           </div>
         </Section>
@@ -222,7 +265,7 @@ export default function EventPage() {
         </Section>
       )}
 
-      <EventCarousel events={otherUpcomingEvents} />
+      <EventCarousel events={otherEvents} />
     </div>
   )
 }

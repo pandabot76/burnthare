@@ -1,5 +1,5 @@
 import IconButton from './IconButton.jsx'
-import { formatEventDate, formatCountdown } from '../utils/events.js'
+import { formatEventDate, formatCountdown, formatStartTime, getEventImageSrc } from '../utils/events.js'
 
 export default function Hero({ event }) {
   if (!event) {
@@ -11,13 +11,15 @@ export default function Hero({ event }) {
   }
 
   const countdown = formatCountdown(event.date)
+  const startTime = formatStartTime(event.startTime)
+  const imageSrc = getEventImageSrc(event)
 
   return (
     <section>
       <div className="max-w-6xl mx-auto px-6 pt-6">
         <div className="relative">
           <img
-            src={`/images/events/${event.image}`}
+            src={imageSrc}
             alt={event.name}
             className="w-full h-auto block rounded-xl"
           />
@@ -37,14 +39,22 @@ export default function Hero({ event }) {
           {event.name}
         </h1>
         <p className="mt-2 text-neutral-600 dark:text-neutral-400 text-[17px]">
-          {formatEventDate(event.date)} · {event.location}
+          {formatEventDate(event.date)}
+          {startTime && <span> · Start {startTime}</span>}
+          {' · '}{event.location}
         </p>
         <p className="mt-2 text-brand-orange font-semibold">{event.tagline}</p>
 
         <div className="mt-5 flex flex-wrap gap-3">
-          <IconButton href={event.bookingUrl} variant="primary" icon="go">
-            Enter race
-          </IconButton>
+          {event.bookingUrl ? (
+            <IconButton href={event.bookingUrl} variant="primary" icon="go">
+              Enter race
+            </IconButton>
+          ) : (
+            <span className="inline-flex items-center gap-2 px-4 py-2.5 text-sm font-bold uppercase tracking-wide rounded-lg bg-orange-50 dark:bg-orange-950 text-brand-orange dark:text-orange-400 border border-orange-200 dark:border-orange-900">
+              Entry coming soon
+            </span>
+          )}
           <IconButton href={`/events/${event.id}`} variant="secondary" icon="info">
             More info
           </IconButton>

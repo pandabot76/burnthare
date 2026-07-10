@@ -7,4 +7,12 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   base: '/',
+  build: {
+    // admin.html is a local-only tool — exclude it from the deployed site
+    rollupOptions: {
+      input: {
+        main: 'index.html',
+      },
+    },
+  },
 })

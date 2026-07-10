@@ -16,6 +16,7 @@ code. You should rarely need to touch anything in `src/components/`.
 | `src/data/site.json` | Site tagline and nav menu links |
 | `src/data/about.json` | About page: history, testimonials, contact details |
 | `src/data/results.json` | Results page: year-by-year links per event |
+| `src/data/partners.json` | Partner events shown in the carousel alongside BurntHare events |
 
 ---
 
@@ -111,7 +112,39 @@ not per event, since the process is the same for every race. Edit the text
 there if it ever needs to change; the four photos live in
 `public/images/process/`.
 
-## Updating results
+## Adding a partner event
+
+Partner events appear in the homepage and event page carousels alongside BurntHare events, marked with a "Partner event" badge and the organiser's name. They link directly to the external entry page — there's no event page on the BurntHare site for them.
+
+Edit `src/data/partners.json`. If you have no partner events, just leave it as an empty array `[]`.
+
+```json
+[
+  {
+    "id": "unique-id-for-this-event",
+    "name": "Event Name",
+    "date": "2027-09-12",
+    "startTime": "09:00",
+    "location": "Town, County",
+    "tagline": "Short description",
+    "image": "my-partner-event.jpg",
+    "bookingUrl": "https://entry-link.com",
+    "partner": "Organiser Name"
+  }
+]
+```
+
+- `image` — place the file in `public/images/partners/`. Leave `image` as `""` if you don't have one; a "No image available" placeholder will show automatically.
+- `partner` — the organiser's name, shown below the event title on the card.
+- The same three-state lifecycle applies: greyed out for 7 days after the race, then removed automatically.
+- BurntHare events with no image show a "Coming Soon" placeholder instead.
+
+## Placeholder images
+
+| Situation | Placeholder |
+|---|---|
+| BurntHare event, no image set | `public/images/events/coming-soon.jpg` |
+| Partner event, no image set | `public/images/partners/no-image.jpg` |
 
 Edit `src/data/results.json` — add a year and a URL pointing to wherever
 your timing partner publishes that year's results. The Results page (`/results`)
@@ -135,7 +168,31 @@ Edit `src/data/site.json`.
 
 ---
 
-## Running it on your own computer
+## Admin portal — easier event editing
+
+Instead of editing JSON by hand, you can use the built-in admin portal — a simple browser-based form that handles both BurntHare events and partner events.
+
+**To open it:**
+
+```bash
+npm run admin
+```
+
+This starts the dev server and opens `http://localhost:5173/admin.html` in your browser automatically. Alternatively, if the dev server is already running (`npm run dev`), just visit that URL directly.
+
+**What it does:**
+
+- Lists all current BurntHare events and partner events in a sidebar
+- Click any event to open a full form covering every field (name, date, start time, races, course maps, registration, rules, prizes, location, etc.)
+- Partner events have a simpler form — just the fields they need
+- Click **+ New** to create an event from scratch (the ID auto-generates from the name)
+- Click **Save & download** — this downloads an updated `events.json` or `partners.json` file, which you then drag into `src/data/` to replace the old one
+- Click **Export all** to download the full current file at any time (useful for backup)
+- Images still need to be placed manually in the right folder — the form tells you where
+
+The portal runs entirely in your browser — no data is sent anywhere. It reads the JSON files from the project folder and writes them back as downloads.
+
+**Important:** The portal only works when served through the dev server (not opened as a plain file). `npm run admin` handles this automatically.
 
 You'll need [Node.js](https://nodejs.org) installed (the LTS version).
 
