@@ -3,6 +3,7 @@
     "id": "hitchin-triathlon",
     "name": "The Hitchin Triathlon",
     "date": "2026-07-05",
+    "startTime": "06:30",
     "location": "Butts Close / Hitchin Outdoor Pool, Fishponds Road, Hitchin",
     "tagline": "Sprint · Nitro · Nano · Atom — 4 distances for all ages",
     "image": "hitchin-triathlon.jpg",
@@ -83,11 +84,12 @@
     "id": "hitchin-town-centre-5k",
     "name": "Hitchin Town Centre 5km",
     "date": "2026-09-27",
+    "startTime": "09:00",
     "location": "Hitchin town centre, Hertfordshire",
     "tagline": "Celebrating 10 years · 5km road race",
     "image": "hitchin-5k.jpg",
-    "poster": "hitchin-5k.jpg",
     "bookingUrl": "https://my.raceresult.com/364463/info",
+    "poster": "hitchin-5k.jpg",
     "resultsUrl": "https://results.racetimingsolutions.co.uk/?CId=16269",
     "summary": "Now in its 10th year, the Hitchin Town Centre 5km is BurntHare's most popular event — a fast, flat course through the heart of Hitchin, taking in the historic market square, the riverside path and the iconic steel statues by Cooper's Yard.",
     "races": [
@@ -135,6 +137,7 @@
     "id": "hitchin-10k",
     "name": "The Hitchin 10km",
     "date": "2027-05-02",
+    "startTime": "09:00",
     "location": "Hitchin, Hertfordshire",
     "tagline": "10km road race + Children's Golden Mile",
     "image": "hitchin-10k.jpg",
@@ -193,6 +196,7 @@
     "id": "great-herts-aonb",
     "name": "The Great Herts AONB",
     "date": "2027-06-06",
+    "startTime": "09:00",
     "location": "Hertfordshire Area of Outstanding Natural Beauty",
     "tagline": "Marathon · Half · 10km — run or ride",
     "image": "aonb.jpg",
@@ -256,6 +260,85 @@
       "address": "Start: Gosmore area, Hertfordshire (exact start venue confirmed closer to the date)",
       "parking": "Event parking and signage will be confirmed nearer the date — coach transfers provided for the point-to-point finish.",
       "mapQuery": "Gosmore, Hertfordshire"
+    }
+  },
+  {
+    "id": "hitchin-triathlon-2027",
+    "name": "Hitchin Triathlon 2027",
+    "date": "2027-07-04",
+    "startTime": "06:30",
+    "location": "Butts Close / Hitchin Outdoor Pool, Fishponds Road, Hitchin",
+    "tagline": "Sprint · Nitro · Nano · Atom — 4 distances for all ages",
+    "image": "hitchintri27.jpeg",
+    "bookingUrl": "",
+    "summary": "BurntHare's flagship multisport event returns to Hitchin's much-loved outdoor pool. Starting and finishing at Butts Close, the Triathlon offers four distances so the whole family can take part on the same day, from first-timers to seasoned age-groupers.",
+    "races": [
+      {
+        "name": "The Sprint",
+        "distance": "400m swim · 20km bike · 5km run",
+        "ages": "16+"
+      },
+      {
+        "name": "The Nitro",
+        "distance": "200m swim · 12km bike · 2.5km run",
+        "ages": "13+"
+      },
+      {
+        "name": "The Atom",
+        "distance": "200m swim · 2km bike · 1.5km run",
+        "ages": "Children 11–14"
+      },
+      {
+        "name": "The Nano",
+        "distance": "100m swim · 2km bike · 1.5km run",
+        "ages": "Children 7–10"
+      }
+    ],
+    "course": {
+      "description": "An open-water-style pool swim at Hitchin Outdoor Pool, followed by a closed-road bike loop out towards the surrounding villages, finishing with a flat, fast run back into Butts Close. Fully marshalled throughout with mile markers on the run.",
+      "maps": [
+        {
+          "label": "Sprint bike route — 20.3km",
+          "image": "triathlon-bike-sprint.jpg"
+        },
+        {
+          "label": "Nitro bike route — 11.9km",
+          "image": "triathlon-bike-nitro.jpg"
+        },
+        {
+          "label": "Run route — 2.5km lap (run twice for the Sprint)",
+          "image": "triathlon-run-loop.jpg"
+        }
+      ]
+    },
+    "registration": {
+      "feeNote": "tbc",
+      "deadline": "Online entries close one week before the event",
+      "notes": [
+        "Entry includes timing chip, event t-shirt and finisher's medal",
+        "Bikes can be racked from 6:30am on race day — overnight secure racking also available the night before",
+        "Body marking required for all adults — registration and transition close at 6:20am"
+      ]
+    },
+    "rules": [
+      "British Triathlon race rules apply to the Sprint and Nitro distances",
+      "Helmets must be worn and fastened at all times while on the bike, including in transition",
+      "No drafting on the bike course for the Sprint distance",
+      "Children's races (Nano/Atom) must be accompanied to registration by a parent or guardian",
+      "Headphones are not permitted on any race distance",
+      "Strictly no members of the public allowed inside transition"
+    ],
+    "prizes": [
+      "Medal for every finisher, every distance",
+      "Event t-shirt included in all entries",
+      "Trophies for 1st, 2nd and 3rd overall (male and female) in the Sprint and Nitro",
+      "Age-category prizes across all adult distances",
+      "Special finisher certificates for all Nano and Atom participants"
+    ],
+    "locationDetails": {
+      "address": "Butts Close, Fishponds Road, Hitchin, Hertfordshire, SG5 1PT",
+      "parking": "Parking is available at the Hitchin Swimming Pool (paid and display — usually free on Sundays). There are other free spaces nearby if you know where to look, and it's a short walk from Hitchin station.",
+      "mapQuery": "Hitchin Outdoor Pool, Fishponds Road, Hitchin"
     }
   }
 ]
