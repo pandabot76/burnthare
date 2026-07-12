@@ -273,6 +273,11 @@
     "bookingUrl": "https://my.raceresult.com/410967/",
     "summary": "BurntHare's flagship multisport event returns to Hitchin's much-loved outdoor pool. Starting and finishing at Butts Close, the Triathlon offers four distances so the whole family can take part on the same day, from first-timers to seasoned age-groupers.  Now also including an 800 meter pool based Aussie style exit and entrance into the pool Olympic / standard distance triathlon as well",
     "races": [
+            {
+        "name": "The Olympic",
+        "distance": "800m swim - 40km bike - 10km run",
+        "ages": "16+"
+      },
       {
         "name": "The Sprint",
         "distance": "400m swim · 20km bike · 5km run",
@@ -292,11 +297,6 @@
         "name": "The Nano",
         "distance": "100m swim · 2km bike · 1.5km run",
         "ages": "Children 7–10"
-      },
-      {
-        "name": "The Olympic",
-        "distance": "800m swim - 40km bike - 10km run",
-        "ages": "16+"
       }
     ],
     "course": {
