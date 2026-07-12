@@ -268,10 +268,10 @@
     "date": "2027-07-04",
     "startTime": "06:30",
     "location": "Butts Close / Hitchin Outdoor Pool, Fishponds Road, Hitchin",
-    "tagline": "Sprint · Nitro · Nano · Atom — 4 distances for all ages",
+    "tagline": "Olympic - Sprint - Nitro - Nano - Atom — 5 distances for all ages",
     "image": "hitchintri27.jpeg",
-    "bookingUrl": "",
-    "summary": "BurntHare's flagship multisport event returns to Hitchin's much-loved outdoor pool. Starting and finishing at Butts Close, the Triathlon offers four distances so the whole family can take part on the same day, from first-timers to seasoned age-groupers.",
+    "bookingUrl": "https://my.raceresult.com/410967/",
+    "summary": "BurntHare's flagship multisport event returns to Hitchin's much-loved outdoor pool. Starting and finishing at Butts Close, the Triathlon offers four distances so the whole family can take part on the same day, from first-timers to seasoned age-groupers.  Now also including an 800 meter pool based Aussie style exit and entrance into the pool Olympic / standard distance triathlon as well",
     "races": [
       {
         "name": "The Sprint",
@@ -292,10 +292,15 @@
         "name": "The Nano",
         "distance": "100m swim · 2km bike · 1.5km run",
         "ages": "Children 7–10"
+      },
+      {
+        "name": "The Olympic",
+        "distance": "800m swim - 40km bike - 10km run",
+        "ages": "16+"
       }
     ],
     "course": {
-      "description": "An open-water-style pool swim at Hitchin Outdoor Pool, followed by a closed-road bike loop out towards the surrounding villages, finishing with a flat, fast run back into Butts Close. Fully marshalled throughout with mile markers on the run.",
+      "description": "An open-water-style pool swim at Hitchin Outdoor Pool, followed by a closed-road bike loop out towards the surrounding villages, finishing with a flat, fast run back into Butts Close. Fully marshalled throughout with mile markers on the run.  The olympic distance is two laps of the cycle and four laps of the run.",
       "maps": [
         {
           "label": "Sprint bike route — 20.3km",
@@ -312,7 +317,7 @@
       ]
     },
     "registration": {
-      "feeNote": "tbc",
+      "feeNote": "£39 - £89, see registration",
       "deadline": "Online entries close one week before the event",
       "notes": [
         "Entry includes timing chip, event t-shirt and finisher's medal",
