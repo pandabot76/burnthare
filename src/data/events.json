@@ -316,11 +316,11 @@
         },
         {
           "label": "Olympic Cycle - 40km",
-          "image": "Olympiccycleroute.png"
+          "image": "olympiccycleroute.png"
         },
         {
           "label": "Olympic Run - 10km",
-          "image": "olympicrun.png"
+          "image": "Olympicrun.png"
         }
       ]
     },
