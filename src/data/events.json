@@ -353,5 +353,71 @@
       "parking": "Parking is available at the Hitchin Swimming Pool (paid and display — usually free on Sundays). There are other free spaces nearby if you know where to look, and it's a short walk from Hitchin station.",
       "mapQuery": "Hitchin Outdoor Pool, Fishponds Road, Hitchin"
     }
+  },
+  {
+    "id": "kings-winter-relay",
+    "name": "Kings Winter Relay",
+    "date": "2026-12-06",
+    "startTime": "09:00",
+    "location": "The Plough Pub, Plough Lane, Kings Walden, Hitchin, SG4 8LA ",
+    "tagline": "Winter Relay 10 Miler",
+    "image": "kings-relay.jpg",
+    "bookingUrl": "https://my.raceresult.com/425747/",
+    "poster": "kings-relay.jpg",
+    "resultsUrl": "https://my.raceresult.com/425747/",
+    "summary": "The first ever Kings Winter Relay is taKing place on Sunday 6th December! The race venue is at The Plough Pub Kings Walden. This event is a reincarnation of the Hitchin Relay Race that took place 12 years ago, and with popular demand, the event is BACK! \nSet in the beautiful village of Kings Walden, bordering Ley Green, the event offers an exciting chance to race with your friends in teams against others, with the aim of having fun, social interaction, and for the glory! ",
+    "races": [
+      {
+        "name": "Relay - Mens",
+        "distance": "16km or 10 Miles, 4 laps of 4km per runner",
+        "ages": "15+"
+      },
+      {
+        "name": "Relay - Womens",
+        "distance": "16km or 10 Miles, 4 laps of 4km per runner",
+        "ages": "15+"
+      },
+      {
+        "name": "Relay - Mixed",
+        "distance": "16km or 10 Miles, 4 laps of 4km per runner",
+        "ages": "15+"
+      }
+    ],
+    "course": {
+      "description": "Each lap is 1.33km. It is run clockwise. Each runner from each team, in order, runs one lap, then hands their relay baton over to the next team mate. Each runner will complete a total of 3 laps each so that the team has collectively run 12 laps, which equals 16km, or 10 miles in old money!. \nThe transition zone to hand over the batons will be in the front car park of The Plough and clearly marked. ",
+      "maps": [
+        {
+          "label": "relay-course",
+          "image": "relay-course.png"
+        }
+      ]
+    },
+    "registration": {
+      "feeNote": "£40 per team",
+      "deadline": "On the day",
+      "notes": [
+        "T-shirts are an additional option if you wish to purchase and are £15."
+      ]
+    },
+    "rules": [
+      "4 people per team. Options are - Men's team, Ladies team, Mixed team (must be 2 men 2 women).",
+      "Each team member takes it in turns to run a 1.33km lap before handing over the relay baton to their next team mate in the transition zone at The Plough Pub.",
+      "As each runner does so, they report in to the check in desk to confirm the completed lap.",
+      "Each runner from each team will complete a total of 3 laps, so as a team collectively, they will cover 12 laps (Each runner will cover a total distance of 4km based on completing their 3 laps each respectively).",
+      "No dogs or young children will be allowed to participate",
+      "Headphones are not permitted at all",
+      "You must be 15 or older to do so as it is on public roads"
+    ],
+    "prizes": [
+      "There will be trophies for the winning teams in each category - MENS, LADIES, MIXED",
+      "There will also be some fun prizes for best team name and best costumes (It is December!)",
+      "Every runner will get a bespoke medal",
+      "T-shirts can be bought online"
+    ],
+    "locationDetails": {
+      "address": "The Plough, Plough Lane, Kings Walden, Hitchin, SG4 8LA ",
+      "parking": "Parking and toilets available on site \nFood and drink available to purchase from the pub",
+      "mapQuery": "The Plough, Plough Lane, Kings Walden, Hitchin, SG4 8LA "
+    }
   }
 ]
