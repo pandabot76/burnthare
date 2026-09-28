@@ -419,5 +419,57 @@
       "parking": "Parking and toilets available on site \nFood and drink available to purchase from the pub",
       "mapQuery": "The Plough, Plough Lane, Kings Walden, Hitchin, SG4 8LA "
     }
+  },
+  {
+    "id": "hitchin-5",
+    "name": "Hitchin Town Centre 5km",
+    "date": "2027-09-26",
+    "startTime": "09:00",
+    "location": "Hitchin town centre, Hertfordshire",
+    "tagline": "5km road race",
+    "image": "Hitchin-5-26.jpg",
+    "bookingUrl": "https://my.raceresult.com/426623/",
+    "poster": "Hitchin-5-26.jpg",
+    "resultsUrl": "https://my.raceresult.com/426623/results#1_515BF4",
+    "summary": "Now in its 11th year, the Hitchin Town Centre 5km is BurntHare's most popular event — a fast, flat course through the heart of Hitchin, taking in the historic market square, the riverside path and the iconic steel statues by Cooper's Yard.",
+    "races": [
+      {
+        "name": "Hitchin Town Centre 5km",
+        "distance": "5km road race (two 2.5km laps)",
+        "ages": "Open"
+      }
+    ],
+    "course": {
+      "description": "Two 2.5km laps through Hitchin town centre, fully marked and marshalled. Starting on the High Street, the course weaves across the river and heads up past Windmill Hill, before looping around onto Payne's Park and down towards the start.",
+      "maps": [
+        {
+          "label": "5km route — two laps of the town centre",
+          "image": "hitchin-5k-route.jpg"
+        }
+      ]
+    },
+    "registration": {
+      "feeNote": "Entry fees vary — see the booking page for current pricing",
+      "notes": [
+        "Event t-shirt available as additional cost",
+        "Chip timing"
+      ]
+    },
+    "rules": [
+      "UK Athletics rules apply",
+      "No dogs, buggies or cycles on the course",
+      "No headphones for safety on the closed-road sections"
+    ],
+    "prizes": [
+      "Medal for every finisher",
+      "Event t-shirt available as additional cost",
+      "Trophies for 1st, 2nd and 3rd overall (male and female)",
+      "Downloadable finisher certificate"
+    ],
+    "locationDetails": {
+      "address": "Hitchin High Street, Hitchin, Hertfordshire, SG5 1AY",
+      "parking": "Town centre car parks (Queen Street, Portmill Lane, Hollow Lane) are a short walk away. Please don't park along the race route, and parking is usually limited so consider car-sharing or public transport.",
+      "mapQuery": "Hitchin High Street, Hitchin"
+    }
   }
 ]
